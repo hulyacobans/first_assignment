@@ -1,0 +1,24 @@
+#SORU 1
+#basit faiz ise;
+butce = 1000
+faiz = 12
+sure = 7
+toplam = (butce*faiz*sure)/100+butce
+print("Toplam", butce, "dolarım olsaydı ve", sure, "gün boyunca %",faiz, 
+      "basit günlük faiz ile bitcoine yatırsaydım {:.0f}".format(toplam), "dolarım olurdu")
+
+#bileşik faiz ise;
+toplam2 = (1+faiz/100)**7*butce
+print("Toplam", butce, "dolarım olsaydı ve", sure, "gün boyunca %",faiz, 
+      "bileşik günlük faiz ile bitcoine yatırsaydım {:.0f}".format(toplam2), "dolarım olurdu")
+
+#SORU 2
+a = 1000
+b = 12
+c = 1210.68
+print("""Hafta başında {} dolarlık bitcoin aldığımızda günde ortalama %{} kazançla, 
+bir hafta sonunda {} dolar kazanırdık""".format(a,b,c))
+
+#SORU 3
+dosya = input("Dosya Adını Giriniz:")
+print("Dosyanız {}.py şeklinde oluşturulmuştur".format(dosya))
